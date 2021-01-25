@@ -6,12 +6,12 @@ import "./App.css";
 
 function App() {
   function send(sql) {
-    sendAsync(sql).then((result) => setResponse(result));
+    sendAsync(sql);
   }
 
   return (
     <div className="App">
-      <button type="button" onClick={() => send(message)}>
+      <button type="button" onClick={() => send("message")}>
         Send
       </button>
     </div>
